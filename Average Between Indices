@@ -1,0 +1,10 @@
+float solve(int n, vector<int> arr, int x, int y){
+//CODE HERE 
+float k=0,ans=0;
+for(int i=x;i<=y;i++){
+    ans+=arr[i];
+    k++;
+}
+float avg=ans/k;
+return avg;
+}
