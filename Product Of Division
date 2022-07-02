@@ -1,0 +1,7 @@
+float solve(int a, int b){
+//CODE HERE 
+int x = a/b;
+float y = a*1.0/b;
+float z = x*y;
+return z;
+}
