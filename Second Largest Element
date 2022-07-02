@@ -1,0 +1,15 @@
+int solve(int n, vector<int> arr){
+//CODE HERE 
+int maxNo = 0;
+for(int i=0;i<n;i++){
+    maxNo=max(maxNo,arr[i]);
+}
+
+int secNo=0;
+for(int i=0;i<n;i++){
+    if(arr[i]<maxNo){
+        secNo=max(secNo, arr[i]);
+    }
+}
+return secNo;
+}
