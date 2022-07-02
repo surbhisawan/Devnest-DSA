@@ -1,0 +1,5 @@
+string solve(string str){
+//CODE HERE 
+string res = "Hello, " + str + "!";
+return res;
+}
