@@ -1,0 +1,17 @@
+vector<int> solve(string str1){
+//CODE HERE 
+vector<int> v;
+int freq[26]={0};
+
+for(int i=0;i<str1.size();i++){
+    freq[str1[i]-'a']++;
+}
+
+for(int i=0;i<str1.size();i++){
+    if(freq[str1[i]-'a']!=0){
+        v.push_back(freq[str1[i]-'a']);
+        freq[str1[i]-'a']=0;
+    }
+}
+return v;
+}
