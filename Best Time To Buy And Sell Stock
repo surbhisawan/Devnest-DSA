@@ -1,0 +1,14 @@
+int solve(int n, vector<int> prices){
+//CODE HERE 
+int total_profit=0, profit=0;
+int minNo=INT_MAX;
+for(int i=0;i<n;i++){
+  if(minNo>prices[i])
+     minNo=prices[i];
+
+  profit=prices[i]-minNo;
+  if(total_profit<profit)
+    total_profit=profit;   
+}
+return total_profit;
+}
