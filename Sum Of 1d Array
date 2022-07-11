@@ -1,0 +1,10 @@
+vector<int> solve(int n, vector<int> nums){
+//CODE HERE 
+vector<int>vec;
+int sum=0;
+for(int i=0;i<n;i++){
+    sum+=nums[i];
+    vec.push_back(sum);
+}
+return vec;
+}
