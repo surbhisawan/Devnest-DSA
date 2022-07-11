@@ -1,0 +1,12 @@
+vector<int> solve(int n, vector<int> arr){
+//CODE HERE 
+int k=0;
+vector<int> vec;
+for(int i=0;i<n;i++){
+ if(i>0 && arr[i-1]==arr[i])
+     continue;
+ else
+     vec.push_back(arr[i]);       
+}
+return vec;
+}
