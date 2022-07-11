@@ -1,0 +1,4 @@
+int solve(int x, int n){
+//CODE HERE 
+return pow(x,n);
+}
