@@ -1,0 +1,16 @@
+int solve(int n, vector<int> nums, int key){
+//CODE HERE 
+int first=0,last=n-1;
+while(first<=last){
+    int mid = (first+last)/2;
+    if(nums[mid]==key)
+       return mid;
+    else if(nums[mid]>key)
+       last=mid-1;
+    else 
+       first=mid+1;      
+}
+return -1;
+
+}
+
